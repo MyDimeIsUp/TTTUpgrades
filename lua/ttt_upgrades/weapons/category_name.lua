@@ -1,0 +1,1 @@
+TTT_Upgrades_Name = "Weapons"

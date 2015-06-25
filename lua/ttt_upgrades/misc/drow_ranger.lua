@@ -2,7 +2,7 @@
 local EVENT = {}
 
 EVENT.Name = "Drow Ranger"
-EVENT.Price = 5500
+EVENT.Price = 2500
 EVENT.Icon = "upgrade_icons/drow_ranger.png"
 EVENT.Description = "Guess what this does."
 

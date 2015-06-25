@@ -11,7 +11,7 @@ function EVENT:EntityTakeDamage(ent, dmginfo)
 	local attacker = dmginfo:GetAttacker()
 	if GetRoundState() == ROUND_ACTIVE and ent:IsPlayer() and ent:IsActive() and IsValid(attacker) and attacker:IsPlayer() and attacker:IsActive() and attacker:UpgradeEnabled("lifesteal") then
 		local damages = dmginfo:GetDamage()
-		attacker:SetHealth(math.Clamp(attacker:Health() + math.floor(damages/10), 0, 100))
+		attacker:SetHealth(math.Clamp(attacker:Health() + math.Clamp(math.floor(damages/10), 0, 10), 0, 100))
 	end
 end
 
